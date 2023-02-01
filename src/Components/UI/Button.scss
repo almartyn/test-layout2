@@ -13,10 +13,10 @@
   grid-column-start: 2;
   cursor: pointer;
   
-  @media (max-width: 1199px){
+  @media (max-width: 1200px){
     min-width: 750px;
   }
-  @media (max-width: 767px){
+  @media (max-width: 768px){
     min-width: 340px;
     padding: 20px 18px;
     font-size: 15px;

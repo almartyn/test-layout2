@@ -1,0 +1,86 @@
+@import "../mixins.scss";
+
+.footer-container-items {
+   max-width: 1001px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 47px;
+   padding-right: 14px;
+   @media(max-width:1200px){
+      padding-right: 0;
+      justify-content: flex-end;
+      gap: 50px;
+      max-width: 761px;
+   }
+
+   .item {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     .item1 {
+       top: -144px;
+       left: 1px;
+       @media (max-width:1200px) {
+         top: -139px;
+       left: -32px;
+       }
+     }
+     .item2 {
+       top: -144px;
+       left: -33px;
+       @media (max-width:1200px) {
+         top: -139px;
+       left: -48px;
+       }
+     }
+     .item3 {
+       top: -144px;
+       left: -27px;
+       @media (max-width:1200px) {
+         top: -139px;
+       left: -49px;
+       }
+     }
+     h3 {
+       @include pfontz(Montserrat, 162px, #fff200, 700, 216px);
+       position: absolute;
+     }
+     .circle {
+       align-self: center;
+       width: 80px;
+       height: 80px;
+       border-radius: 50%;
+       background-color: #fff2004d;
+       margin-bottom: 18px;
+       z-index: 1000;
+     }
+     .dashed {
+       position: absolute;
+       width: 249px;
+       border: 1px dashed #000000;
+       z-index: 5;
+       top: 40px;
+       @media (max-width: 1200px) {
+         display: none;
+       }
+     }
+     .left {
+       left: 169px;
+     }
+     .right {
+       left: -165px;
+     }
+
+     p {
+       max-width: 255px;
+       text-align: center;
+       @include pfontz(Montserrat, 22px, #000, 700, 30px);
+       @media (max-width: 1200px){
+       max-width: 200px;
+       font-size: 18px;
+       line-height: 28px;
+      }
+     }
+   }
+ }

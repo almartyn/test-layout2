@@ -1,103 +1,30 @@
 @import "../mixins.scss";
 
 .footer-wraper {
-  position: relative;
-
   max-width: 1180px;
   margin: 0 auto;
-  @media (max-width: 1199px) {
-    max-width: 750px;
+  @media (max-width: 1200px) {
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     max-width: 340px;
   }
   h2 {
     @include pfontz(Montserrat, 36px, #000, 700, 48px);
     text-align: center;
-    padding-left: 20px;
     margin-bottom: 161px;
-    @media (max-width: 767px) {
+    @media (max-width: 1200px) {
+      margin-bottom: 105px;
+    }
+    @media (max-width: 768px) {
       font-size: 22px;
+      margin-bottom: 35px;
       line-height: 32px;
     }
   }
-  .footer-container-items {
-    max-width: 1001px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 6px;
-    margin-bottom: 47px;
-    @media(max-width:767px){
-      display: block;
-    }
-
-    .item {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      @media(max-width:767px){
-        align-items: center;
-      }
-      .item1 {
-        top: -144px;
-        left: 1px;
-      }
-      .item2 {
-        top: -144px;
-        left: -33px;
-      }
-      .item3 {
-        top: -144px;
-        left: -27px;
-      }
-      h3 {
-        @include pfontz(Montserrat, 162px, #fff200, 700, 216px);
-        position: absolute;
-      }
-      .circle {
-        align-self: center;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: #fff2004d;
-        margin-bottom: 18px;
-        z-index: 1000;
-      }
-      .dashed {
-        position: absolute;
-        width: 249px;
-        border: 1px dashed #000000;
-        z-index: 5;
-        top: 40px;
-        @media (max-width: 1199px) {
-          display: none;
-        }
-      }
-      .left {
-        left: 169px;
-      }
-      .right {
-        left: -165px;
-      }
-
-      p {
-        max-width: 255px;
-        text-align: center;
-        @include pfontz(Montserrat, 22px, #000, 700, 30px);
-        @media (max-width: 1199px){
-        max-width: 200px;
-        font-size: 18px;
-        line-height: 28px;
-       }
-      }
-    }
-  }
-
+  
   .button-wraper {
     display: flex;
     justify-content: center;
-    padding-left: 20px;
     margin-bottom: 50px;
   }
 }

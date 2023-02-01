@@ -1,0 +1,46 @@
+@import "../mixins.scss";
+
+.mySwiper {
+  height: 272px;
+  padding-left: 39px;
+  margin-bottom: 94px;
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .item1 {
+      top: -49px;
+      left: 18px;
+    }
+    .item2 {
+      top: -49px;
+      left: 9px;
+    }
+    .item3 {
+      top: -49px;
+      left: 14px;
+    }
+    h3 {
+      @include pfontz(Montserrat, 162px, #fff200, 700, 216px);
+      position: absolute;
+    }
+    .circle {
+      margin-top: 90px;
+      align-self: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff2004d;
+      margin-bottom: 18px;
+      z-index: 1000;
+    }
+    p {
+      max-width: 200px;
+      text-align: center;
+      @include pfontz(Montserrat, 18px, #000, 700, 28px);
+      margin-bottom: 20px;
+    }
+  }
+}

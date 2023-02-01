@@ -24,7 +24,7 @@ const Form = (props) => {
         <label htmlFor="checkbox"></label>
         <p className="text-checkbox">
           I agree to the
-          <a href="#"> Privacy Policy, Terms & Conditions</a> <br />
+          <a href="#"> Privacy Policy, Terms & Conditions </a> 
           and to receive marketing material
         </p>
         

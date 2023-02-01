@@ -3,22 +3,22 @@
   background-color: #fff200;
   text-align: center;
   margin-bottom: 60px;
-  @media (max-width: 1199px) {
-    margin-bottom: 50px;
+  max-width: 100%;
+  @media (max-width: 1200px) {
+    margin-bottom: 52px;
   }
-  @media (max-width: 767px) {
-    min-width: 340px;
+  @media (max-width: 768px) {
     margin-bottom: 35px;
   }
   .container-headerH2 {
     margin: 0 auto;
     max-width: 894px;
-    padding: 31px 0 31px 20px;
-    @media (max-width: 1199px) {
+    padding: 31px 0 31px 0;
+    @media (max-width: 1200px) {
       max-width: 593px;
-      padding-top: 367px;
+      padding: 357px 0 20px 0px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 320px;
       padding-top: 445px;
       padding-bottom: 40px;
@@ -26,7 +26,7 @@
     h2 {
       @include pfontz(Montserrat, 18px, #000, 700, 29px);
       text-align: center;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         font-size: 16px;
         line-height: 27px;
       }

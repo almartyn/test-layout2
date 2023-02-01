@@ -2,36 +2,46 @@
 
 .header-wraper {
   background-image: url("./img/header-background-img.jpg");
-  background-position: left;
+  background-position: center center;
   background-repeat: no-repeat;
-  padding: 155px 772px 332px 830px;
-  background-color: #b2b1ac;
-  @media (max-width: 1199px) {
-    max-width: 1199px;
-    padding: 129px 245px 617px 636px;
+  height: 618px;
+  position: relative;
+  @media (max-width: 1200px) {
+    height: 878px;
     background-image: url("./img/header-backfround-img-tablet.jpg");
+    background-color: #b2b1ac;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
+    height: 499px;
     background-image: url("./img/header-background-img-mobile.jpg");
-    padding: 48px 355px 373px 246px;
     background-color: #ffffff;
   }
-
   .header-title-wraper {
     width: 318px;
+    position: absolute;
+    top: 154px;
+    left: calc(50% - 130px);
+    @media (max-width: 1200px){
+      top: 127px;
+      left: calc(50% - -35px);
+    }
+    @media (max-width: 768px){
+      top: 49px;
+      left: calc(50% - 137px);
+    }
     .header-title {
       @include pfontz(Montserrat, 46px, #ffffff, 700, 60px);
       text-align: center;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         width: 166px;
         font-size: 24px;
         line-height: 29px;
       }
-
+      
       span {
         font-size: 58px;
         line-height: 70px;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           font-size: 37px;
           line-height: 45px;
         }
