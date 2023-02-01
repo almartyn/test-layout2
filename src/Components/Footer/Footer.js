@@ -11,7 +11,6 @@ const Footer = () => {
     query: '(max-width: 768px)'
   })
   
-  // window.innerWidth<768;
   return (
     <div className="footer-wraper">
       <h2>Maecenas elementum elementum dui</h2>

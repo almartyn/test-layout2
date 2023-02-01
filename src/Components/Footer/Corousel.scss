@@ -1,9 +1,13 @@
 @import "../mixins.scss";
 
 .mySwiper {
-  height: 272px;
+  height: 325px;
   padding-left: 39px;
-  margin-bottom: 94px;
+  margin-bottom: 40px;
+  span {
+    width: 15px;
+    height: 15px;
+  }
 
   .item {
     position: relative;

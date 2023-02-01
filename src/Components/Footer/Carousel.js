@@ -8,7 +8,9 @@ import { Pagination } from "swiper";
 const Carousel = () => {
   
   return (
-    <Swiper modules={[Pagination]} className="mySwiper">
+    <Swiper pagination={{
+      dynamicBullets: true,
+    }} modules={[Pagination]} className="mySwiper">
       <SwiperSlide>
         <div className="item">
           <h3 className="item1">1</h3>
