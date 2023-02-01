@@ -1,0 +1,35 @@
+@import "../mixins.scss";
+.wraper-headerH2 {
+  background-color: #fff200;
+  text-align: center;
+  margin-bottom: 60px;
+  @media (max-width: 1199px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    min-width: 340px;
+    margin-bottom: 35px;
+  }
+  .container-headerH2 {
+    margin: 0 auto;
+    max-width: 894px;
+    padding: 31px 0 31px 20px;
+    @media (max-width: 1199px) {
+      max-width: 593px;
+      padding-top: 367px;
+    }
+    @media (max-width: 767px) {
+      max-width: 320px;
+      padding-top: 445px;
+      padding-bottom: 40px;
+    }
+    h2 {
+      @include pfontz(Montserrat, 18px, #000, 700, 29px);
+      text-align: center;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 27px;
+      }
+    }
+  }
+}

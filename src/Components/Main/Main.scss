@@ -1,0 +1,92 @@
+@import "../mixins.scss";
+.main-wraper {
+  padding-left: 20px;
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  @media (max-width: 1199px) {
+    max-width: 750px;
+    margin-bottom: 350px;
+  }
+  @media (max-width: 767px) {
+    max-width: 340px;
+    padding-bottom: 60px;
+    
+  }
+  .main-wraper-container {
+    max-height: 423px;
+    display: grid;
+    grid-template-columns: 548px 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-column-gap: 20px;
+    @media (max-width: 1199px) {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    .container-img {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      @media (max-width: 767px) {
+        display: flex;
+        order: -1;
+      }
+      
+      .img-desktop {
+        @media (max-width: 1199px) {
+          display: none;
+        }
+      }
+      .img-tablet {
+        display: none;
+        @media (max-width: 1199px) {
+          display: block;
+          margin-bottom: 35px;
+        }
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      .img-mobile {
+        display: none;
+        @media (max-width: 767px) {
+          display: block;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .container-title {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      margin-bottom: 18px;
+      @include pfontz(Montserrat, 36px, #000, 700, 48px);
+      @media (max-width: 767px) {
+        display: flex;
+        order: -2;
+        font-size: 20px;
+        line-height: 28px;
+      }
+     
+    }
+    .container-text {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      margin-bottom: 31px;
+      @include pfontz(Montserrat, 16px, #000, 400, 28px);
+      @media (max-width: 767px) {
+        // display: flex;
+        // order: 3;
+      }
+    }
+    //  .button-wraper {
+      
+    //  }
+  }
+}

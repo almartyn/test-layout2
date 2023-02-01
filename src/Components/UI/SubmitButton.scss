@@ -1,0 +1,14 @@
+@import "../mixins.scss";
+
+
+.submitButton {
+  @include pfontz("Montserrat", 20px, #fff, 700, 24px);
+  background: #225CF0;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 128px;
+  border: none;
+  margin-bottom: 20px;
+}
